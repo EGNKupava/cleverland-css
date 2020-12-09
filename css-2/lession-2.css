@@ -1,0 +1,102 @@
+body {
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+div {
+  padding: 20px;
+}
+
+main > div {
+  display: flex;
+  width: 85vw;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+.main-content .wrapper .card {
+  margin-left: 20px;
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+.main-content .wrapper .card .title {
+  color: grey;
+}
+.main-content .wrapper .card img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.main-content .wrapper .card span {
+  color: rebeccapurple;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.main-content .wrapper p + a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.main-content .wrapper .card a > span {
+  text-decoration: none;
+  color: black;
+}
+
+.main-content .wrapper .card p + a:hover {
+  transform: translateX(5px);
+  color: red;
+  opacity: 0.5;
+}
+
+.wrapper .card-aside {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  color: rgb(110, 118, 241);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transition: all 1s;
+}
+
+.wrapper .card-aside:hover {
+  transform: translateX(50px);
+}
+
+footer {
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 25px;
+  color: green;
+  /*color: green!important;*/
+}
+
+footer p {
+  color: black;
+}
+/*  специфичность
+Селекторы тегов и псевдоэлементы — по 1 баллу (0, 0, 0, 1);
+Селекторы атрибутов, классы и псевдоклассы — по 10 баллов (0, 0, 1, 0);
+Идентификаторы — по 100 баллов (0, 1, 0, 0);
+Атрибут style – 1000 баллов (1, 0, 0, 0).
+*/
