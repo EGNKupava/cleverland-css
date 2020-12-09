@@ -17,11 +17,9 @@ div {
 }
 
 .main-content div {
-  display: flex;
   width: 85vw;
   background-color: #fff;
   margin: 0 auto;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
 }
