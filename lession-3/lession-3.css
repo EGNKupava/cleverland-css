@@ -1,0 +1,102 @@
+body {
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.main-content .wrapper {
+  width: 85vw;
+  min-height: 70vh;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+.main-content .links-list li {
+  margin-bottom: 10px;
+}
+
+.main-content .links-list a.link:link {
+  color: blue;
+}
+
+.main-content .links-list a.link:visited {
+  color: rgb(0, 253, 169);
+}
+
+.main-content .links-list a.link:focus {
+  color: rgb(255, 0, 0);
+}
+
+.main-content .links-list a.link:active {
+  color: rgb(255, 255, 0);
+}
+
+:root {
+  background: rgb(219, 235, 1);
+}
+
+.main-content .my-list li:nth-child(even) {
+  /*четные*/
+  background: rgb(110, 118, 241);
+}
+
+.main-content .my-list li:nth-child(odd) {
+  /*нечетные*/
+  background: rgb(225, 0, 255);
+}
+
+.main-content .my-list li:first-child {
+  background: rgb(228, 245, 0);
+}
+
+.main-content .my-list li:last-child {
+  background: rgb(224, 15, 15);
+}
+
+.main-content .my-list li:nth-child(8) {
+  background: rgb(0, 225, 255);
+}
+
+/*.main-content .my-list li:nth-child(3n+1) {
+  background: rgb(32, 168, 123);
+}*/
+
+footer {
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 25px;
+  color: black;
+}
+/*  специфичность
+Селекторы тегов и псевдоэлементы — по 1 баллу (0, 0, 0, 1);
+Селекторы атрибутов, классы и псевдоклассы — по 10 баллов (0, 0, 1, 0);
+Идентификаторы — по 100 баллов (0, 1, 0, 0);
+Атрибут style – 1000 баллов (1, 0, 0, 0).
+*/
