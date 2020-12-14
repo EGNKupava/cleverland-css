@@ -44,6 +44,10 @@ h1 {
   color: blue;
 }
 
+.main-content .links-list a.link:hover {
+  background: rgb(49, 155, 90);
+}
+
 .main-content .links-list a.link:visited {
   color: rgb(0, 253, 169);
 }
