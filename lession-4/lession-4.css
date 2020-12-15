@@ -1,0 +1,20 @@
+body {
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper .header h1 {
+  font-size: 26px;
+}
+
+.wrapper p {
+  color: red;
+}
+
+footer {
+  padding: 20px 0;
+}
