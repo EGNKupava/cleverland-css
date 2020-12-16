@@ -44,3 +44,40 @@ footer p {
   font-size: 25px;
   color: black;
 }
+
+.main-content .text-a::before {
+  content: "Добавленный с помощью before ";
+  color: #ff0000;
+}
+.main-content .text-a::after {
+  content: " Тескт добавленный с помощью after";
+  color: #00ff00;
+}
+.main-content .text-b::first-letter {
+  color: #0000ff;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+/* К псевдоэлементу :first-line могут применяться не все стилевые свойства. Допустимо использовать свойства, относящиеся к шрифту, изменению цвет текста и фона, а также: clear, line-height, letter-spacing, text-decoration, text-transform, vertical-align и word-spacing. */
+
+.main-content .text-c::first-line {
+  color: #999999;
+  font-size: 25px;
+}
+
+.main-content .empty::before {
+  content: "BLOCK";
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: rgb(44, 167, 81);
+  transition: all 0.3s;
+}
+
+.empty:hover::before {
+  background: rgb(179, 46, 46);
+}
