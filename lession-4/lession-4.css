@@ -1,20 +1,46 @@
 body {
-  font-size: 14px;
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
 }
 
-.wrapper {
-  width: 960px;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.main-content .wrapper {
+  width: 85vw;
+  min-height: 70vh;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
   margin: 0 auto;
-}
-
-.wrapper .header h1 {
-  font-size: 26px;
-}
-
-.wrapper p {
-  color: red;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
 }
 
 footer {
-  padding: 20px 0;
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 25px;
+  color: black;
 }
