@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+
+body {
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.main-content .wrapper {
+  width: 85vw;
+  min-height: 60vh;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+/*---------6 УРОК-------------------------------*/
+
+.box {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin: 10px auto;
+  background: #00ff00;
+}
+
+.box-a {
+  /* border-style: none; */
+  /* border-style: hidden; */
+  /* border-style: dotted; */
+  /* border-style: dashed; */
+  /* border-style: solid; */
+  /* border-style: ridge; объемный рифленый вид с эффектом выпуклости */
+  /* border-style: inset; вид с эффектом вдавленности */
+  border-style: outset; /*объемный вид с эффектом выпуклости*/
+
+  /* border-top-style, border-bottom-style */
+  /* border-left-style, border-right-style */
+
+  border-width: 10px;
+  /*border-top-width, border-bottom-width*/
+  /* border-left-width, border-right-width*/
+
+  border-color: #8f80ad;
+  /* border-top-color, border-bottom-color, 
+  border-left-color, border-right-color */
+
+  /* border: 5px dashed #000000; */
+}
+
+.box-b {
+  border: 4px ridge;
+
+  border-radius: 20px;
+  border-top-right-radius: 70px;
+  /* border-top-left-radius, border-top-right-radius, 
+  border-bottom-left-radius, border-bottom-right-radius */
+
+  /*Все они принимают в качестве радиуса значения в любых доступных в CSS 
+  единицах измерения, а также процентах, отсчет которых производится 
+  относительно ширины блока.*/
+
+  /* border-top-right-radius: 70px/20px; */
+
+  outline: 3px solid red;
+  /* outline-offset: -15px; */
+}
+
+.box-c {
+  margin-top: 20px;
+  box-shadow: 10px -10px 10px #cccccc;
+}
+
+.box-d {
+  padding: 20px;
+  box-sizing: border-box;
+  /* box-sizing: content-box; default */
+  /* box-sizing: padding-box; */
+
+  min-width: 300px;
+  min-height: 300px;
+
+  max-width: 700px;
+  max-height: 700px;
+  background: rgb(187, 169, 169);
+}
+
+.box-d p {
+  width: 400x;
+  height: 400px;
+  background: rgb(51, 179, 34);
+}
