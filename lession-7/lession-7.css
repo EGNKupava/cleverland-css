@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+
+body {
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.main-content .wrapper {
+  width: 85vw;
+  min-height: 60vh;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+/*---------7 УРОК-------------------------------*/
+
+.box {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px auto;
+  background: #00ff00;
+  /* display: inline; */
+  /* display: inline-block; */
+  display: block;
+  /* display: none; */
+  /* display: flex; */
+  /* display: grid; */
+}
+
+.container-main {
+  width: 500px;
+  height: 500px;
+  background: green;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.container-main .container {
+  height: 100px;
+  background: yellow;
+  margin-bottom: 20px;
+}
+
+.container-second {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  background-image: url(https://sb.kaleidousercontent.com/800x533/82b410156e/cars-5bcaa8f602500d88f0c59d9e43b52df0f808cecea4062986b64de89eaa9db23d-1.jpg);
+  background-repeat: no-repeat
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.container-second .container {
+  height: 100px;
+  background: rgba(51, 57, 56, 0.4);
+  margin-bottom: 20px;
+  color: green;
+  font-weight: 700;
+  font-size: 30px;
+}
+.container-second .container:last-child {
+  background-image: url(https://cdn.xl.thumbs.canstockphoto.com/close-up-old-dried-leaf-stock-images_csp22102953.jpg);2
+  /* repeat–используется браузером по умолчанию, повторяя изображение по вертикали и горизонтали;
+•repeat-x–изображение повторяется только по горизонтали;•repeat-y–изображение повторяется только по вертикали;•no-repeat–изображение не повторяется;
+•space–изображение повторяется таким образом, чтобы в области поместилось целое число рисунков; если же это не удаётся, фоновые рисунки масштабируются */
+/* background-repeat: no-repeat; */
+  /* background-position: center; */
+}
