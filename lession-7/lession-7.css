@@ -41,6 +41,9 @@ h1 {
 
 /*---------7 УРОК-------------------------------*/
 
+.wrapper {
+  /* display: flex; */
+}
 .box {
   width: 200px;
   height: 200px;
@@ -59,22 +62,24 @@ h1 {
   width: 500px;
   height: 500px;
   background: green;
-  padding: 20px;
+  padding: 10px;
   margin: 0 auto;
 }
 
 .container-main .container {
-  height: 100px;
+  padding: 50px 10px;
   background: yellow;
   margin-bottom: 20px;
 }
 
 .container-second {
   width: 500px;
-  height: 500px;
+  height: 700px;
   background-color: green;
   background-image: url(https://sb.kaleidousercontent.com/800x533/82b410156e/cars-5bcaa8f602500d88f0c59d9e43b52df0f808cecea4062986b64de89eaa9db23d-1.jpg);
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 90%;
   padding: 20px;
   margin: 0 auto;
 }
@@ -83,11 +88,15 @@ h1 {
   height: 100px;
   background: rgba(51, 57, 56, 0.4);
   margin-bottom: 20px;
-  color: green;
+  color: #fff;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 12px;
 }
 .container-second .container:last-child {
+  background-size: cover;
+  background-size: 50%;
+  /* background-size: contain; */
+
   background-image: url(https://cdn.xl.thumbs.canstockphoto.com/close-up-old-dried-leaf-stock-images_csp22102953.jpg);2
   /* repeat–используется браузером по умолчанию, повторяя изображение по вертикали и горизонтали;
 •repeat-x–изображение повторяется только по горизонтали;•repeat-y–изображение повторяется только по вертикали;•no-repeat–изображение не повторяется;
