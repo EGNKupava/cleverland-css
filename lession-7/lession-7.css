@@ -3,13 +3,16 @@
 body {
   background: rgb(110, 118, 241);
   font-family: "Montserrat", sans-serif;
+}
+
+div {
   box-sizing: border-box;
 }
 
 header {
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
 }
 
 header a {
@@ -44,6 +47,22 @@ h1 {
 .wrapper {
   /* display: flex; */
 }
+
+.my-container {
+  /* display: block; */
+  /* display: inline; */
+  /* display: inline-block; */
+}
+
+.box-wrap {
+  /* display: inline; */
+  /* display: inline-block; */
+  display: block;
+  /* display: none; */
+  /* display: flex; */
+  /* display: grid; */
+}
+
 .box {
   width: 200px;
   height: 200px;
@@ -60,27 +79,34 @@ h1 {
 
 .container-main {
   width: 500px;
-  height: 500px;
+  height: 300px;
   background: green;
   padding: 10px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .container-main .container {
-  padding: 50px 10px;
+  padding: 20px 10px;
   background: yellow;
   margin-bottom: 20px;
 }
 
+.container-main .container p {
+  background: black;
+  color: #fff;
+}
+
 .container-second {
   width: 500px;
-  height: 700px;
+  height: 600px;
   background-color: green;
   background-image: url(https://sb.kaleidousercontent.com/800x533/82b410156e/cars-5bcaa8f602500d88f0c59d9e43b52df0f808cecea4062986b64de89eaa9db23d-1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 90%;
-  padding: 20px;
+
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  padding: 30px;
   margin: 0 auto;
 }
 
@@ -93,14 +119,28 @@ h1 {
   font-size: 12px;
 }
 .container-second .container:last-child {
-  background-size: cover;
-  background-size: 50%;
+  height: 200px;
+  /* background-size: cover; */
+  background-size: 20%;
   /* background-size: contain; */
 
-  background-image: url(https://cdn.xl.thumbs.canstockphoto.com/close-up-old-dried-leaf-stock-images_csp22102953.jpg);2
+  background-image: url(https://prayanika.files.wordpress.com/2012/10/smile-3.jpg);
   /* repeat–используется браузером по умолчанию, повторяя изображение по вертикали и горизонтали;
 •repeat-x–изображение повторяется только по горизонтали;•repeat-y–изображение повторяется только по вертикали;•no-repeat–изображение не повторяется;
 •space–изображение повторяется таким образом, чтобы в области поместилось целое число рисунков; если же это не удаётся, фоновые рисунки масштабируются */
-/* background-repeat: no-repeat; */
+  /* background-repeat: no-repeat; */
   /* background-position: center; */
+}
+
+.third-container {
+  margin: 10px auto;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(30deg, #c02b2b, #ffffff);
+  /* background: linear-gradient(
+    45deg,
+    rgba(235, 0, 0, 0.3) 0%,
+    rgba(3, 205, 128, 1) 100%
+  ); */
+  /* background: radial-gradient(circle, rgba(249,63,251,1) 0%, rgba(70,141,252,1) 100%); */
 }
