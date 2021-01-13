@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(72, 76, 141);
+  box-shadow: 2px 0px 2px grey;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content .wrapper {
+  width: 85vw;
+  min-height: 70vh;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+/*---------7 УРОК-------------------------------*/
+
+.box-wrap {
+  position: relative;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #00ff00;
+  display: block;
+}
+
+.box.box-a {
+  /* position: static; */
+  /* position: absolute; */
+  /* position: relative; */
+  /* position: fixed; */
+  /* position: sticky; */
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  float: left;
+  clear: both;
+}
+
+.text {
+  /* clear: left; */
+  /* clear: right; */
+  /* clear: both; */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.container-main {
+  width: 500px;
+  height: 300px;
+  background-image: url(https://sb.kaleidousercontent.com/800x533/82b410156e/cars-5bcaa8f602500d88f0c59d9e43b52df0f808cecea4062986b64de89eaa9db23d-1.jpg);
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.container-main .container {
+  padding: 10px 10px;
+  background: yellow;
+  margin-bottom: 20px;
+}
+
+.container-main .container p {
+  background: black;
+  color: #fff;
+}
+
+.third-container {
+  margin: 10px auto;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(
+    45deg,
+    rgba(235, 0, 0, 0.3) 0%,
+    rgba(3, 205, 128, 1) 100%
+  );
+}
