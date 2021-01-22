@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(72, 76, 141, 0.705);
+  box-shadow: 2px 0px 2px grey;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-block .nav-link {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(61, 54, 41, 0);
+  transition: all 0.5s;
+}
+
+.nav-block .nav-link:hover {
+  opacity: 0.8;
+  border: 1px solid orange;
+  box-shadow: 0 0 8px orange;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content .wrapper {
+  width: 85vw;
+  min-height: 1200px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+/*---------11 УРОК-------------------------------*/
+
+.box {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  height: 200px;
+  margin: 10px auto 150px auto;
+  border: 2px solid black;
+  background: rgba(6, 240, 6, 0.61);
+}
+
+/* Значение 1 изменяет масштаб по горизонтали. Значение от 0 до 1 уменьшает элемент, больше 1 — увеличивает.
+Значение 2 деформирует (сдвигает) стороны элемента по оси Y, положительное значение — вверх, отрицательное — вниз.
+Значение 3 деформирует (сдвигает) стороны элемента по оси X, положительное значение — влево, отрицательное — вправо.
+Значение 4 изменяет масштаб по вертикали. Значение меньше 1 уменьшает элемент, больше 1 — увеличивает.
+Значение 5 смещает элемент по оси X, положительное — вправо, отрицательное — влево.
+Значение 6 смещает элемент по оси Y, положительное значение — вниз, отрицательное — вверх. */
+
+.transformed-A {
+  transform: matrix(1.5, -1, 1, 1.5, 40, 10);
+}
+
+.transformed-B {
+  transform: translate(300px, -100px);
+  /* transform: translateX(300px); */
+  /* transform: translateY(-100px); */
+}
+
+.transformed-C {
+  /* scale(x,y) */
+  transform: scale(3, 2);
+}
+
+.transformed-D {
+  /* transform: skewX(2);
+  transform: skewY(2); */
+  transform: rotate(35deg);
+  transform-origin: left bottom;
+}
+.transformed-I {
+  transform: scale(1.5) rotate(-10deg);
+}
+
+.transformed-F {
+  /* transition: width 2s, height 3s background 0.5s; */
+  transition: all 2s;
+  /* transition-property: width; */
+  transition-duration: 4s;
+  transition-timing-function: ease;
+  /* transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: linear;
+  transition-timing-function: step-start;
+  transition-timing-function: step-end; */
+  /* transition-timing-function: steps(6, end); */
+  transition-delay: 0.5s;
+
+  /* transition: <property> <duration> <timing-function> <delay>; */
+}
+
+.transformed-F:hover {
+  width: 350px;
+  height: 250px;
+  background: rgba(39, 64, 143, 0.664);
+  border-radius: 50%;
+}
