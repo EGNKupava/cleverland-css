@@ -5,6 +5,7 @@ body {
   padding: 0;
   background: rgb(110, 118, 241);
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
 div {
@@ -156,14 +157,23 @@ div {animation: shadow 1s ease-in-out 0.5s alternate, move 5s linear 2s;} */
 
 .title {
   animation-name: trigger-title;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 @keyframes trigger-title {
   25% {
-    transform: translateY(17px);
+    transform: translate(0, 20px);
+  }
+  26% {
+    transform: translate(-7px, 20px);
+  }
+  27% {
+    transform: translate(7px, 20px);
+  }
+  27% {
+    transform: translate(0, 20px);
   }
   75% {
     transform: translateY(-17px);
@@ -176,10 +186,17 @@ div {animation: shadow 1s ease-in-out 0.5s alternate, move 5s linear 2s;} */
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  transform: translateX(-250px);
 }
 
 @keyframes dog {
   50% {
+    transform: translateX(700px) scale(1, 1);
+  }
+  51% {
     transform: translateX(700px) scale(-1, 1);
+  }
+  99% {
+    transform: translateX(-250px) scale(-1, 1);
   }
 }
