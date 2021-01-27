@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(72, 76, 141, 0.705);
+  box-shadow: 2px 0px 2px grey;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-block .nav-link {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(61, 54, 41, 0);
+  transition: all 0.5s;
+}
+
+.nav-block .nav-link:hover {
+  opacity: 0.8;
+  border: 1px solid orange;
+  box-shadow: 0 0 8px orange;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content .wrapper {
+  width: 85vw;
+  min-height: 1200px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+/*---------11 УРОК-------------------------------*/
+
+.box {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background: rgba(6, 240, 6, 0.61);
+
+  animation-name: my-animation;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-iteration-count: 3; /*infinite, дробные 1.5*/
+
+  animation-direction: alternate;
+  /* animation-direction: normal;
+  animation-direction: reverse;
+  animation-direction: alternate-reverse; */
+
+  animation-timing-function: ease;
+  /* animation-timing-function:  ease-in; */
+  /* animation-timing-function:  ease-out; */
+  /* animation-timing-function:  ease-in-out; */
+  /* animation-timing-function:  linear; */
+  /* animation-timing-function:  cubic-bezier(n1,n2,n3,n4); */
+
+  animation-play-state: running;
+  /* animation-play-state: paused; */
+
+  /* во время старта анимации к элементу применяется стиль первого ключевого кадра, который будет сохраняться на весь период задержки анимации, установленный свойством animation-delay; */
+  animation-fill-mode: backwards;
+
+  /* по окончании анимации к элементу применяется стиль последнего ключевого кадра; */
+  animation-fill-mode: forward;
+
+  /* применяются оба значения: для момента запуска анимации применяется первое значение, т.е. backwards, а в момент финиша –второе, т.е. forward; */
+  animation-fill-mode: both;
+
+  /*  animation-fill-mode: none; –данное значение применяется по умолчанию; стиль элемента до и после анимации остается неизменным, а если ранее было применено одно из значений backwards или forward, то их действия будут отменены */
+
+  /* Краткая запись анимации: свойство animation */
+  /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction */
+
+  /* Для одного элемента можно задавать несколько анимаций, перечислив их названия через запятую:
+div {animation: shadow 1s ease-in-out 0.5s alternate, move 5s linear 2s;} */
+}
+
+@keyframes my-animation {
+  0% {
+    background: red;
+  }
+  50% {
+    transform: translate(300px, 500px);
+  }
+
+  75% {
+    transform: translate(300px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    background: rgba(6, 240, 6, 0.61);
+  }
+}
+
+.button {
+  cursor: pointer;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 40px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(0, 255, 0, 0.61);
+  transition: all 0.5s;
+}
+
+.button:hover {
+  opacity: 0.7;
+  background: rgba(243, 2, 62, 0.61);
+}
+
+.button:hover + .box {
+  animation-play-state: paused;
+}
+
+/* https://habr.com/ru/post/503026/ */
+/* https://webdesign.tutsplus.com/ru/articles/pure-css-animation-inspiration-on-codepen--cms-30875 */
+
+.title {
+  animation-name: trigger-title;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes trigger-title {
+  25% {
+    transform: translateY(17px);
+  }
+  75% {
+    transform: translateY(-17px);
+  }
+}
+
+.dog {
+  animation-name: dog;
+  animation-delay: 1s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes dog {
+  50% {
+    transform: translateX(700px) scale(-1, 1);
+  }
+}
