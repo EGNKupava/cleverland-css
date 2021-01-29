@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(72, 76, 141, 0.705);
+  box-shadow: 2px 0px 2px grey;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-block .nav-link {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(61, 54, 41, 0);
+  transition: all 0.5s;
+}
+
+.nav-block .nav-link:hover {
+  opacity: 0.8;
+  border: 1px solid orange;
+  box-shadow: 0 0 8px orange;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content .wrapper {
+  width: 90vw;
+  min-height: 1200px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+/*---------13 УРОК-------------------------------*/
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 2fr 1fr 1fr; */
+  grid-template-columns: 2fr 1fr 1fr;
+  /* grid-template-columns: repeat(3, 200px); */
+  grid-template-rows: 1fr 2fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.grid-box {
+  padding: 10px;
+  min-height: 200px;
+  font-size: 30px;
+  color: #fff;
+  background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px rgb(70, 64, 64);
+  border-radius: 8px;
+}
+
+.grid-box.one {
+  grid-column: 1 / span 3;
+}
+.grid-box.six {
+  /* grid-column: 1 / 3; */
+}
+.grid-box.seven {
+  grid-column: 2 / span 2;
+}
+/* .grid-box.ten {
+  grid-column: 1 / span 2;
+} */
+
+.grid-box:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.my-container {
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid: "h h h" "n n n" "a m m " "f f f";
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.my-container .my-header {
+  grid-area: h;
+}
+
+.my-container .my-aside {
+  grid-area: a;
+}
+
+.my-container .my-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.my-container .my-nav {
+  grid-area: n;
+}
+
+.my-container .my-main {
+  grid-area: m;
+}
+
+.my-container .my-footer {
+  display: flex;
+  grid-area: f;
+}
+
+.bg {
+  padding: 10px;
+  color: #fff;
+  background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
