@@ -55,7 +55,7 @@ h1 {
 
 .main-content .wrapper {
   width: 90vw;
-  min-height: 1200px;
+  /* min-height: 1200px; */
   background-color: #fff;
   font-size: 20px;
   font-weight: 700;
@@ -108,11 +108,14 @@ h1 {
 }
 
 .my-container {
-  height: 800px;
+  /* height: 800px; */
   display: grid;
+  /* justify-items: stretch; */
+  /* align-content: space-between; */
   grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 5fr 2fr; */
 
-  grid: "h h h" "n n n" "a m m " "f f f";
+  grid: "h h h" "n n n" "a m m " "art1 art2 art3" "f f f";
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -122,6 +125,7 @@ h1 {
 }
 
 .my-container .my-aside {
+  /* align-self: start; */
   grid-area: a;
 }
 
@@ -136,6 +140,15 @@ h1 {
 .my-container .my-main {
   grid-area: m;
 }
+.my-container my-article-first {
+  grid-area: art1;
+}
+.my-container my-article-second {
+  grid-area: art2;
+}
+.my-container my-article-third {
+  grid-area: art3;
+}
 
 .my-container .my-footer {
   display: flex;
@@ -143,9 +156,19 @@ h1 {
 }
 
 .bg {
+  border-radius: 8px;
   padding: 10px;
   color: #fff;
-  background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+  background-image: url("https://freehtmldesigns.com/wp-content/uploads/2017/09/CSS-Background-Pattern-1-1-660x330.png");
   background-size: cover;
   background-position: center;
+}
+
+/* https://tpverstak.ru/grid/ */
+
+@media screen and (max-width: 800px) {
+  .my-container {
+    grid-template-columns: 1fr;
+    grid: "h" "n" "a" "m" "art1" "art1" "art2" "art3" "f";
+  }
 }
