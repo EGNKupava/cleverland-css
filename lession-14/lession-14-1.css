@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(110, 118, 241);
+  font-family: "Montserrat", sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(72, 76, 141, 0.705);
+  box-shadow: 2px 0px 2px grey;
+}
+
+.burger-menu {
+  display: none;
+}
+.menu {
+  display: none;
+}
+
+.nav-block .nav-link {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(61, 54, 41, 0);
+  transition: all 0.5s;
+}
+
+.nav-block .nav-link:hover {
+  opacity: 0.8;
+  border: 1px solid orange;
+  box-shadow: 0 0 8px orange;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content .wrapper {
+  width: 95vw;
+  min-height: 80vh;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+}
+
+/*---------14 УРОК-------------------------------*/
+
+
+.my-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid: "h h h" "n n n" "a m m " "art1 art2 art3" "f f f";
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.my-container .my-header {
+  grid-area: h;
+}
+
+.my-container .my-aside {
+  /* align-self: start; */
+  grid-area: a;
+}
+
+.my-container .my-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.my-container .my-nav {
+  grid-area: n;
+}
+
+.my-container .my-main {
+  grid-area: m;
+}
+.my-container my-article-first {
+  grid-area: art1;
+}
+.my-container my-article-second {
+  grid-area: art2;
+}
+.my-container my-article-third {
+  grid-area: art3;
+}
+
+.my-container .my-footer {
+  display: flex;
+  grid-area: f;
+}
+
+.bg {
+  border-radius: 8px;
+  padding: 10px;
+  background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Now let’s see some common breakpoints for widths of devices:
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+.menu:hover + .burger-menu {
+  font-size: 30px;
+  background: #fff;
+  display: block;
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  h1 {
+    font-size: 40px;
+  }
+
+  .my-container {
+    grid-template-columns: 1fr;
+    grid: "h" "n" "a" "m" "art1" "art1" "art2" "art3" "f";
+  }
+
+  .nav-block {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    color: #fff;
+  }
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .my-container {
+    grid-template-columns: 1fr;
+    grid: "h" "n" "a" "m" "art1" "art1" "art2" "art3" "f";
+  }
+
+  .main-content .wrapper {
+    width: 100vw;
+    padding: 0;
+    font-size: 30px;
+  }
+}
