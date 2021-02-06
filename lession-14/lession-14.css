@@ -158,7 +158,12 @@ h1 {
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  .main-content .wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .my-container {
     grid-template-columns: 1fr;
     grid: "h" "n" "a" "m" "art1" "art1" "art2" "art3" "f";
