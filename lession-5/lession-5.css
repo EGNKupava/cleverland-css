@@ -47,17 +47,19 @@ footer p {
 }
 
 .main-content .text-a {
-  /* line-height: 30px;*/
+  /*Свойство управляет высотой строки или межстрочным интервалом.*/
+  line-height: 30px;
+
 
   /* text-indent: 1.5em;*/
-  text-indent: 20px;
+  text-indent: 30px;
 
-  /*font-size: 25px;*/
-  /*font-size: 200%;*/
-  /*font-size: 0.5em;*/
+  font-size: 30px; 
+  /* font-size: 200%;
+  font-size: 0.5em; */
   /*font-size: 1.2rem;*/
   /* font-size: 30px; */
-  font-size: small;
+  /* font-size: small; */
 }
 
 .main-content .text-b {
@@ -76,15 +78,15 @@ footer p {
   /* text-decoration: none; */
   /* text-decoration: inherit; */
 
-  text-decoration-style: solid;
-  /* text-decoration-style: double;
-  text-decoration-style: dotted;
-  text-decoration-style: dashed;
-  text-decoration-style: wavy; */
+  /* text-decoration-style: solid; */
+   text-decoration-style: double;
+  /* text-decoration-style: dotted; */
+  /* text-decoration-style: dashed; */
+  /* text-decoration-style: wavy;  */
 
-  text-decoration-color: #ff9900;
+  text-decoration-color: rgb(189, 134, 32);
 
-  /* text-decoration: line-through wavy #ff0000; */
+  text-decoration: line-through wavy #ff0000;
 }
 
 /*  text-decoration состоит из text-decoration-line и text-decoration-style*/
@@ -95,7 +97,7 @@ footer p {
 
 .main-content .text-c {
   /*  смещение относительно надписи и радиус размытия, цвет тени, */
-  text-shadow: 1px 1px 2px #00aa00;
+  text-shadow: 10px 10px 10px #00aa00;
 
   /* все строчные */
   text-transform: lowercase;
@@ -108,19 +110,20 @@ footer p {
 }
 
 .main-content .text-d {
-  letter-spacing: 0.6em;
+  letter-spacing: 5px;
   word-spacing: 10px;
-  line-height: 1.5;
+  line-height: 100px;
   text-indent: 30px;
+  height: 100px;
 
-  text-align: center;
-  /* text-align: left ; */
+  /* text-align: center; */
+  text-align: left ;
   /* text-align: right ; */
-  /* text-align: justify ; */
+  text-align: justify ;
 
-  vertical-align: middle;
+  /* vertical-align: middle; */
   /* vertical-align:top ; */
-  /* vertical-align:bottom ; */
+  vertical-align:bottom ;
   /* vertical-align:baseline ; */
 
   white-space: normal;
@@ -132,8 +135,8 @@ footer p {
 
 .list-a {
   /* list-style-type: disc; */
-  /* list-style-type: square; */
-  list-style-type: decimal;
+  /* list-style-type: none; */
+  /* list-style-type: decimal; */
   /* list-style-type: lower-roman; */
   /* list-style-type: upper-roman; */
   /* list-style-type: lower-latin; */
@@ -157,6 +160,7 @@ footer p {
 
   border-spacing: 5px 15px;
 
+  vertical-align: top;
   border: 1px solid #888;
 }
 .table td {

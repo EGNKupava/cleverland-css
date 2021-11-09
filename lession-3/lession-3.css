@@ -1,6 +1,7 @@
 body {
   background: rgb(110, 118, 241);
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 header {
@@ -13,8 +14,7 @@ header a {
   text-decoration: none;
 }
 
-h1,
-h2 {
+h1, h2 {
   color: #fff;
   text-align: center;
 }
@@ -40,42 +40,49 @@ h1 {
 }
 /*----Динамические псевдоклассы----*/
 
-.main-content .links-list a.link:link {
+/*не посещенная ссылка*/
+.main-content .links-list .link:link {
   color: blue;
 }
 
+/*наведении пользователем на элемент;*/
 .main-content .links-list a.link:hover {
   background: rgb(49, 155, 90);
 }
 
+/*посещенная ссылка*/
 .main-content .links-list a.link:visited {
   color: rgb(0, 253, 169);
 }
 
+/*ссылки, а также элементы форм, которые активированы посредством курсора*/
 .main-content .links-list a.link:focus {
   color: rgb(255, 0, 0);
 }
 
+/*выбирает элемент, активированный пользователем с помощью клика мышки.*/
 .main-content .links-list a.link:active {
   color: rgb(255, 255, 0);
 }
 
 /*-----Структурные псевдоклассы-----*/
+/*элемент, являющийся корневым в документе*/
 
 :root {
   background: rgb(219, 235, 1);
 }
 
+/*четные*/
 .main-content .my-list li:nth-child(even) {
-  /*четные*/
   background: rgb(110, 118, 241);
 }
 
+/*нечетные*/
 .main-content .my-list li:nth-child(odd) {
-  /*нечетные*/
   background: rgb(225, 0, 255);
 }
 
+/*Первый ребенок*/
 .main-content .my-list li:first-child {
   background: rgb(228, 245, 0);
 }
@@ -88,9 +95,9 @@ h1 {
   background: rgb(0, 225, 255);
 }
 
-/*.main-content .my-list li:nth-child(3n+1) {
+.main-content .my-list li:nth-child(3n+1) {
   background: rgb(32, 168, 123);
-}*/
+}
 
 /* .main-content .my-list li:nth-last-child(4n + 1) {
   background: rgb(108, 121, 113);
@@ -98,7 +105,7 @@ h1 {
 
 /*--------- Селектор структурных псевдоклассов типа-----------*/
 
-.main-content .list-of-containers p:nth-of-type(odd) {
+.main-content .list-of-containers p:nth-of-type(n+3) {
   background: #777;
 }
 .main-content .list-of-containers p:nth-of-type(even) {
@@ -114,10 +121,13 @@ h1 {
 .main-content .one-type p:only-of-type {
   background: #777;
 }
-/*-------------------------------*/
+
+/*Псевдоклассы пользовательского интерфейса*/
+/*----------------------------------------*/
 
 .main-content .test-form input:disabled {
   border: 4px solid rgb(236, 13, 69);
+  background: rgb(90, 79, 79);
 }
 .main-content .test-form input:enabled {
   border: 4px solid rgb(0, 255, 64);
@@ -135,9 +145,12 @@ h1 {
   margin-right: 30px;
 }
 /*----Селекторы атрибутов----*/
+.main-content .attributes input {
+  background: rgb(216, 17, 189);
+}
 
 .main-content .attributes input[value="test"] {
-  background: rgb(53, 155, 53);
+  background: rgb(139, 145, 139);
 }
 .main-content .attributes input[value^="<<"] {
   background: rgb(0, 253, 190);
