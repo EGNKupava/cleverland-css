@@ -70,9 +70,9 @@ h1 {
 .grid-container {
   display: grid;
   /* grid-template-columns: 2fr 1fr 1fr; */
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 6fr 4fr 1fr;
   /* grid-template-columns: repeat(3, 200px); */
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -94,7 +94,7 @@ h1 {
   grid-column: 1 / span 3;
 }
 .grid-box.six {
-  /* grid-column: 1 / 3; */
+  grid-column: 1 / 3;
 }
 .grid-box.seven {
   grid-column: 2 / span 2;
@@ -115,13 +115,18 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 5fr 2fr; */
 
-  grid: "h h h" "n n n" "a m m " "art1 art2 art3" "f f f";
+  grid:
+    "header header header"
+    "n n n"
+    "a m m "
+    "art1 art2 art3"
+    "f f f";
   column-gap: 10px;
   row-gap: 10px;
 }
 
 .my-container .my-header {
-  grid-area: h;
+  grid-area: header;
 }
 
 .my-container .my-aside {
@@ -169,6 +174,6 @@ h1 {
 @media screen and (max-width: 800px) {
   .my-container {
     grid-template-columns: 1fr;
-    grid: "h" "n" "a" "m" "art1" "art1" "art2" "art3" "f";
+    grid: "header" "a" "n" "m" "art1" "art1" "art2" "art3" "f";
   }
 }

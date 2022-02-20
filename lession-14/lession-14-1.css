@@ -73,7 +73,12 @@ h1 {
 .my-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid: "h h h" "n n n" "a m m " "art1 art2 art3" "f f f";
+  grid:
+    "h h h"
+    "n n n"
+    "a m m "
+    "art1 art2 art3"
+    "f f f";
   column-gap: 10px;
   row-gap: 10px;
 }
