@@ -1,23 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
-
-body {
-  margin: 0;
-  padding: 0;
-  background: rgb(110, 118, 241);
-  font-family: "Montserrat", sans-serif;
-}
-
-div {
-  box-sizing: border-box;
-}
 
 header {
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgb(72, 76, 141);
-  box-shadow: 2px 0px 2px grey;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(110, 118, 241,1) 18%, rgb(8, 9, 9) 69%);
+  box-shadow: 2px 0px 6px rgb(40, 40, 40);
 }
 
 header a {

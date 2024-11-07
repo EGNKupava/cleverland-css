@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
 
 body {
-  background: rgb(110, 118, 241);
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(110, 118, 241,1) 18%, rgb(8, 9, 9) 69%);
   font-family: "Montserrat", sans-serif;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 h1,
@@ -19,16 +25,13 @@ h1 {
   font-size: 30px;
 }
 
-.main-content div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 85vw;
+.main-content .wrapper {
+  width: 50vw;
   min-height: 80vh;
-  padding: 10px;
+  padding: 24px;
   background-color: #fff;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 24px;
   box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
 }
 
@@ -36,21 +39,28 @@ h1 {
   margin-bottom: 10px;
 }
 .main-content a {
-  position: relative;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #666;
+  font-weight: 600;
 }
 
 .main-content a:hover {
   color: rgb(101, 122, 216);
 }
 
-.main-content a:hover::before {
-  position: absolute;
-  left: -50px;
-  content: ">>";
+.main-page-link {
+  font-size: 30px;
   font-weight: 700;
+  color: #fff;
+}
+
+.main-page-link.main-page-link:hover {
+  color: #666;
+}
+
+.main-page-link.main-page-link:visited {
+  color: #fff;
 }
 
 .input-text {
