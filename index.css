@@ -14,36 +14,35 @@ div {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 h2 {
+  color: #a1aadd;
   text-align: center;
-  color: #ffffff;
 }
+
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 10px;
 }
-h1 {
-  font-size: 30px;
-  font-weight: 700;
-}
 
 .main-content .wrapper {
   max-width: 600px;
   min-height: 80vh;
-  padding: 24px;
+  padding: 32px;
   background-color: #fff;
   margin: 0 auto;
   border-radius: 24px;
-  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+  box-shadow: 3px 1px 10px 4px rgba(107, 114, 113, 0.57);
   margin-bottom: 24px;
 }
 
@@ -58,23 +57,24 @@ h1 {
   );
 }
 
-.main-content ul.main-page {
-  list-style-type: none;
+.main-content ol li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.main-content ul li:not(:last-child) {
-  margin-bottom: 10px;
+.main-content ol li {
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .main-content a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .main-content a:hover {
-  color: rgb(101, 122, 216);
+  opacity: 0.8;
 }
 
 .main-page-link {
@@ -101,7 +101,7 @@ h1 {
   margin-right: 10px;
   background: rgba(255, 255, 255, 0.1);
   text-decoration: none;
-  color: #fff;
+  color: #a1aadd;
   border-radius: 10px;
   border: 1px solid rgba(61, 54, 41, 0);
   transition: all 0.5s;
