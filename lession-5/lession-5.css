@@ -1,54 +1,11 @@
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
-
-header a {
-  text-decoration: none;
-}
-
-h1,
-h2 {
-  color: #fff;
-  text-align: center;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-.main-content .wrapper {
-  width: 85vw;
-  background-color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  margin: 10px auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
-}
-
-footer {
-  text-align: right;
-  margin-top: 20px;
-}
-
-footer p {
-  font-size: 25px;
-  color: black;
-}
-
 .main-content .text-a {
   /*Свойство управляет высотой строки или межстрочным интервалом.*/
   line-height: 30px;
 
-
   /* text-indent: 1.5em;*/
   text-indent: 30px;
 
-  font-size: 30px; 
+  font-size: 30px;
   /* font-size: 200%;
   font-size: 0.5em; */
   /*font-size: 1.2rem;*/
@@ -73,7 +30,7 @@ footer p {
   /* text-decoration: inherit; */
 
   /* text-decoration-style: solid; */
-   text-decoration-style: double;
+  text-decoration-style: double;
   /* text-decoration-style: dotted; */
   /* text-decoration-style: dashed; */
   /* text-decoration-style: wavy;  */
@@ -111,13 +68,13 @@ footer p {
   height: 100px;
 
   /* text-align: center; */
-  text-align: left ;
+  text-align: left;
   /* text-align: right ; */
-  text-align: justify ;
+  text-align: justify;
 
   /* vertical-align: middle; */
   /* vertical-align:top ; */
-  vertical-align:bottom ;
+  vertical-align: bottom;
   /* vertical-align:baseline ; */
 
   white-space: normal;

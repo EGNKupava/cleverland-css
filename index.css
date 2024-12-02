@@ -3,7 +3,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(110, 118, 241,1) 18%, rgb(8, 9, 9) 69%);
+  min-height: 100vh;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -11,37 +13,63 @@ div {
   box-sizing: border-box;
 }
 
-h1,
-h2 {
-  color: #fff;
+h1 {
   text-align: center;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
 }
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 10px;
 }
 h1 {
   font-size: 30px;
+  font-weight: 700;
 }
 
 .main-content .wrapper {
-  width: 50vw;
+  max-width: 600px;
   min-height: 80vh;
   padding: 24px;
   background-color: #fff;
   margin: 0 auto;
   border-radius: 24px;
   box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+  margin-bottom: 24px;
+}
+
+.main-content .wrapper.main-page {
+  border-radius: 24px;
+  background-color: #6d7bc8;
+  background-image: linear-gradient(
+    45deg,
+    #6d7bc8 0%,
+    #c668be 46%,
+    #ffd489 100%
+  );
+}
+
+.main-content ul.main-page {
+  list-style-type: none;
 }
 
 .main-content ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .main-content a {
   text-decoration: none;
   font-size: 18px;
-  color: #666;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -52,17 +80,35 @@ h1 {
 .main-page-link {
   font-size: 30px;
   font-weight: 700;
-  color: #fff;
+  color: inherit;
 }
 
 .main-page-link.main-page-link:hover {
-  color: #666;
+  color: inherit;
 }
 
 .main-page-link.main-page-link:visited {
-  color: #fff;
+  color: inherit;
 }
 
 .input-text {
-  color: red
+  color: red;
+}
+
+.nav-block .nav-link {
+  display: inline-block;
+  padding: 12px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(61, 54, 41, 0);
+  transition: all 0.5s;
+}
+
+.nav-block .nav-link:hover {
+  opacity: 0.8;
+  border: 1px solid orange;
+  box-shadow: 0 0 8px orange;
 }
