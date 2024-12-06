@@ -5,7 +5,7 @@ body {
   padding: 0;
   min-height: 100vh;
   background-color: #ffdee9;
-  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  background-image: linear-gradient(15deg, #ffdee9 0%, #14243f 100%);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -21,6 +21,8 @@ h1 {
   color: transparent;
   font-size: 30px;
   font-weight: 700;
+  letter-spacing: 0.5rem;
+  margin-top: 32px;
 }
 
 h2 {
@@ -69,8 +71,11 @@ header {
 .main-content a {
   text-decoration: none;
   font-size: 24px;
-  color: #ffffff;
   font-weight: 500;
+}
+
+.main-content.main-page a {
+  color: #ffffff;
 }
 
 .main-content a:hover {

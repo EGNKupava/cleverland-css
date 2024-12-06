@@ -1,9 +1,5 @@
 /*---------7 УРОК-------------------------------*/
 
-.wrapper {
-  /* display: flex; */
-}
-
 .my-container {
   /* display: flex; */
   /* display: block; */
@@ -76,6 +72,7 @@
   font-weight: 700;
   font-size: 12px;
 }
+
 .container-second .container:last-child {
   height: 200px;
   /* background-size: cover; */
