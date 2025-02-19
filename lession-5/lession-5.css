@@ -1,63 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
-  background: rgb(110, 118, 241);
-  font-family: "Montserrat", sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
-
-header a {
-  text-decoration: none;
-}
-
-h1,
-h2 {
-  color: #fff;
-  text-align: center;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-.main-content .wrapper {
-  width: 85vw;
-  background-color: #fff;
-  font-size: 20px;
+@font-face {
+  font-family: "Tangerine";
+  src: url("fonts/Tangerine-Bold.ttf") format("truetype");
   font-weight: 700;
-  margin: 10px auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+  font-style: normal;
 }
 
-footer {
-  text-align: right;
-  margin-top: 20px;
+@font-face {
+  font-family: "Tangerine";
+  src: url("fonts/Tangerine-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-footer p {
-  font-size: 25px;
-  color: black;
+.main-content .text-a .bold-text {
+  font-family: "Tangerine", sans-serif;
+  font-weight: 700;
 }
 
 .main-content .text-a {
+  font-family: "Tangerine", sans-serif;
+  font-size: 24px;
+
   /*Свойство управляет высотой строки или межстрочным интервалом.*/
   line-height: 30px;
-
 
   /* text-indent: 1.5em;*/
   text-indent: 30px;
 
-  font-size: 30px; 
-  /* font-size: 200%;
-  font-size: 0.5em; */
-  /*font-size: 1.2rem;*/
+  /* font-size: 24px; */
+  /* font-size: 200%; */
+  /* font-size: 0.5em; */
+  /* font-size: 2rem; */
   /* font-size: 30px; */
   /* font-size: small; */
 }
@@ -66,7 +41,7 @@ footer p {
   font-family: "Montserrat", sans-serif;
   /* font-family: "PT Sans", "Arial", sans-serif; */
 
-  font-weight: 700; /* light - 300 , 400- normal, bold - 700, bolder,*/
+  font-weight: 700; /* light - 300 , 400 - normal, bold - 700, bolder,*/
 
   font-style: normal; /* italic курсив, oblique - наклонное начертание даже если нет курсива */
 
@@ -79,14 +54,14 @@ footer p {
   /* text-decoration: inherit; */
 
   /* text-decoration-style: solid; */
-   text-decoration-style: double;
+  text-decoration-style: double;
   /* text-decoration-style: dotted; */
   /* text-decoration-style: dashed; */
   /* text-decoration-style: wavy;  */
 
   text-decoration-color: rgb(189, 134, 32);
 
-  text-decoration: line-through wavy #ff0000;
+  /* text-decoration: line-through wavy #ff0000; */
 }
 
 /*  text-decoration состоит из text-decoration-line и text-decoration-style*/
@@ -97,12 +72,12 @@ footer p {
 
 .main-content .text-c {
   /*  смещение относительно надписи и радиус размытия, цвет тени, */
-  text-shadow: 10px 10px 10px #00aa00;
+  text-shadow: 1px 1px 5px #00aa00;
 
   /* все строчные */
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   /* все заглавные */
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   /* каждое слово начинается с большой буквы */
   /* text-transform: capitalize; */
   /* отменяет изменение регистра */
@@ -110,21 +85,17 @@ footer p {
 }
 
 .main-content .text-d {
+  height: 150px;
+  border: 1px solid gray;
   letter-spacing: 5px;
   word-spacing: 10px;
   line-height: 100px;
   text-indent: 30px;
-  height: 100px;
 
   /* text-align: center; */
-  text-align: left ;
+  text-align: left;
   /* text-align: right ; */
-  text-align: justify ;
-
-  /* vertical-align: middle; */
-  /* vertical-align:top ; */
-  vertical-align:bottom ;
-  /* vertical-align:baseline ; */
+  text-align: justify;
 
   white-space: normal;
   /* white-space: pre ;
@@ -133,11 +104,18 @@ footer p {
   white-space: pre-line; */
 }
 
+.main-content .text-d input {
+  /* vertical-align: middle; */
+  /* vertical-align:top ; */
+  vertical-align: bottom;
+  /* vertical-align:baseline ; */
+}
+
 .list-a {
   /* list-style-type: disc; */
   /* list-style-type: none; */
   /* list-style-type: decimal; */
-  /* list-style-type: lower-roman; */
+  list-style-type: lower-roman;
   /* list-style-type: upper-roman; */
   /* list-style-type: lower-latin; */
   /* list-style-type: upper-latin;  */
@@ -163,6 +141,7 @@ footer p {
   vertical-align: top;
   border: 1px solid #888;
 }
+
 .table td {
   text-align: center;
   /* border: 1px solid rgb(167, 71, 71); */

@@ -1,52 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
-
-body {
-  background: rgb(110, 118, 241);
-  font-family: "Montserrat", sans-serif;
-}
-
-div {
-  box-sizing: border-box;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-header a {
-  text-decoration: none;
-  color: #fff;
-}
-
-h1,
-h2 {
-  color: #fff;
-  text-align: center;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-.main-content .wrapper {
-  width: 85vw;
-  min-height: 60vh;
-  background-color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  margin: 10px auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
-}
-
 /*---------7 УРОК-------------------------------*/
-
-.wrapper {
-  /* display: flex; */
-}
 
 .my-container {
   /* display: flex; */
@@ -120,6 +72,7 @@ h1 {
   font-weight: 700;
   font-size: 12px;
 }
+
 .container-second .container:last-child {
   height: 200px;
   /* background-size: cover; */

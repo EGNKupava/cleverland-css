@@ -1,58 +1,119 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
 
 body {
-  background: rgb(110, 118, 241);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #ffdee9;
+  background-image: linear-gradient(15deg, #ffdee9 0%, #14243f 100%);
   font-family: "Montserrat", sans-serif;
 }
 
-h1,
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: left;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  margin-top: 32px;
+}
+
 h2 {
-  color: #fff;
+  color: #a1aadd;
   text-align: center;
 }
+
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 10px;
 }
-h1 {
-  font-size: 30px;
-}
 
-.main-content div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 85vw;
+.main-content .wrapper {
+  max-width: 600px;
   min-height: 80vh;
-  padding: 10px;
+  padding: 32px;
   background-color: #fff;
   margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 3px 1px 11px 5px rgba(51, 57, 56, 0.57);
+  border-radius: 24px;
+  box-shadow: 3px 1px 10px 4px rgba(107, 114, 113, 0.57);
+  margin-bottom: 24px;
 }
 
-.main-content ul li:not(:last-child) {
+.main-content .wrapper.main-page {
+  border-radius: 24px;
+  background-color: #6d7bc8;
+  background-image: linear-gradient(
+    45deg,
+    #6d7bc8 0%,
+    #c668be 46%,
+    #ffd489 100%
+  );
+}
+
+.main-content ol li:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.main-content ol li {
+  font-size: 24px;
+  color: #ffffff;
+}
+
 .main-content a {
-  position: relative;
   text-decoration: none;
-  font-size: 20px;
-  color: #666;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.main-content.main-page a {
+  color: #ffffff;
 }
 
 .main-content a:hover {
-  color: rgb(101, 122, 216);
+  opacity: 0.8;
 }
 
-.main-content a:hover::before {
-  position: absolute;
-  left: -50px;
-  content: ">>";
+.main-page-link {
+  font-size: 30px;
   font-weight: 700;
+  color: inherit;
+}
+
+.main-page-link.main-page-link:hover {
+  color: inherit;
+}
+
+.main-page-link.main-page-link:visited {
+  color: inherit;
 }
 
 .input-text {
-  color: red
+  color: red;
+}
+
+.nav-block .nav-link {
+  display: inline-block;
+  padding: 12px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: #a1aadd;
+  border-radius: 10px;
+  border: 1px solid rgba(61, 54, 41, 0);
+  transition: all 0.5s;
+}
+
+.nav-block .nav-link:hover {
+  opacity: 0.8;
+  border: 1px solid orange;
+  box-shadow: 0 0 8px orange;
 }
